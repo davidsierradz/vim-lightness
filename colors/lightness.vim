@@ -87,9 +87,9 @@ exec "hi! MoreMsg          guifg=" . s:gui07 . " guibg=NONE            gui=bold 
 exec "hi! NonText          guifg=" . s:gui08 . " guibg=NONE            gui=NONE          ctermfg=" . s:cterm08 . " ctermbg=NONE              cterm=NONE"
 exec "hi! Normal           guifg=" . s:gui07 . " guibg=NONE            gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=NONE"
 exec "hi! Pmenu            guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . s:cterm07 . " cterm=NONE"
-exec "hi! PmenuSel         guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=bold          ctermfg=" . s:cterm15 . " ctermbg=" . s:cterm07 . " cterm=bold"
-exec "hi! PmenuSbar        guifg=NONE            guibg=" . s:gui08 . " gui=NONE          ctermfg=NONE              ctermbg=" . s:cterm07 . " cterm=NONE"
-exec "hi! PmenuThumb       guifg=NONE            guibg=" . s:gui15 . " gui=NONE          ctermfg=NONE              ctermbg=" . s:cterm00 . " cterm=NONE"
+exec "hi! PmenuSel         guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=bold          ctermfg=" . s:cterm15 . " ctermbg=" . s:cterm00 . " cterm=bold"
+exec "hi! PmenuSbar        guifg=NONE            guibg=" . s:gui08 . " gui=NONE          ctermfg=NONE              ctermbg=" . s:cterm00 . " cterm=NONE"
+exec "hi! PmenuThumb       guifg=NONE            guibg=" . s:gui15 . " gui=NONE          ctermfg=NONE              ctermbg=" . s:cterm07 . " cterm=NONE"
 exec "hi! Question         guifg=" . s:gui07 . " guibg=NONE            gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=NONE"
 exec "hi! QuickFixLine     guifg=NONE            guibg=NONE            gui=underline     ctermfg=NONE              ctermbg=NONE              cterm=underline"
 exec "hi! Search           guifg=" . s:gui00 . " guibg=" . s:gui03 . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . s:cterm03 . " cterm=NONE"
@@ -119,11 +119,12 @@ hi! link ModeMsg MoreMsg
 
 
 
+
 " :help group-name
 
 exec "hi! Comment          guifg=" . s:gui08 . " guibg=NONE            gui=italic             ctermfg=" . s:cterm08 . "  ctermbg=NONE                 cterm=italic"
 exec "hi! String           guifg=" . s:gui02 . " guibg=NONE            gui=NONE               ctermfg=" . s:cterm02 . "  ctermbg=NONE                 cterm=NONE"
-exec "hi! Boolean          guifg=" . s:gui03 . " guibg=NONE            gui=NONE               ctermfg=" . s:cterm01 . "  ctermbg=NONE                 cterm=NONE"
+exec "hi! Boolean          guifg=" . s:gui03 . " guibg=NONE            gui=NONE               ctermfg=" . s:cterm03 . "  ctermbg=NONE                 cterm=NONE"
 exec "hi! Number           guifg=" . s:gui05 . " guibg=NONE            gui=NONE               ctermfg=" . s:cterm05 . "  ctermbg=NONE                 cterm=NONE"
 exec "hi! Underlined       guifg=" . s:gui07 . " guibg=NONE            gui=underline          ctermfg=" . s:cterm07 . "  ctermbg=NONE                 cterm=underline"
 exec "hi! Error            guifg=" . s:gui07 . " guibg=" . s:gui01 . " gui=NONE               ctermfg=" . s:cterm07 . "  ctermbg=" . s:cterm01 . "    cterm=NONE"
@@ -161,6 +162,13 @@ hi! link diffLine DiffText
 
 " j-hui/fidget.nvim:
 hi! link FidgetTitle NonText
+
+" which-key.nvim
+exec "hi! WhichKey            guifg=" . s:gui00 . " guibg=" . "NONE" . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . "NONE" . " cterm=NONE"
+exec "hi! WhichKeySeparator   guifg=" . s:gui00 . " guibg=" . "NONE" . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . "NONE" . " cterm=NONE"
+exec "hi! WhichKeyGroup       guifg=" . s:gui00 . " guibg=" . "NONE" . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . "NONE" . " cterm=NONE"
+exec "hi! WhichKeyDesc        guifg=" . s:gui00 . " guibg=" . "NONE" . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . "NONE" . " cterm=NONE"
+exec "hi! WhichKeyValue       guifg=" . s:gui00 . " guibg=" . "NONE" . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . "NONE" . " cterm=NONE"
 
 " For some reason, this needs to be here for CmpItemKindDefault to
 " correctly link to Normal:
