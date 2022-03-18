@@ -79,17 +79,17 @@ exec "hi! DiffText         guifg=" . s:gui00 . " guibg=" . s:gui04 . " gui=NONE 
 exec "hi! ErrorMsg         guifg=" . s:gui00 . " guibg=" . s:gui01 . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . s:cterm01 . " cterm=NONE"
 exec "hi! VertSplit        guifg=" . s:gui07 . " guibg=NONE            gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=NONE"
 exec "hi! Folded           guifg=" . s:gui08 . " guibg=NONE            gui=italic        ctermfg=" . s:cterm08 . " ctermbg=NONE              cterm=italic"
-exec "hi! IncSearch        guifg=" . s:gui07 . " guibg=" . s:gui03 . " gui=bold          ctermfg=" . s:cterm07 . " ctermbg=" . s:cterm03 . " cterm=bold"
+exec "hi! IncSearch        guifg=" . s:gui07 . " guibg=" . s:gui03 . " gui=bold          ctermfg=" . s:cterm00 . " ctermbg=" . s:cterm03 . " cterm=bold"
 exec "hi! Substitute       guifg=" . s:gui07 . " guibg=" . s:gui03 . " gui=bold          ctermfg=" . s:cterm07 . " ctermbg=" . s:cterm03 . " cterm=bold"
 exec "hi! LineNr           guifg=" . s:gui07 . " guibg=NONE            gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=NONE"
 exec "hi! MatchParen       guifg=" . s:gui07 . " guibg=NONE            gui=bold          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=bold"
 exec "hi! MoreMsg          guifg=" . s:gui07 . " guibg=NONE            gui=bold          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=bold"
 exec "hi! NonText          guifg=" . s:gui08 . " guibg=NONE            gui=NONE          ctermfg=" . s:cterm08 . " ctermbg=NONE              cterm=NONE"
 exec "hi! Normal           guifg=" . s:gui07 . " guibg=NONE            gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=NONE"
-exec "hi! Pmenu            guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=" . s:cterm08 . " cterm=NONE"
-exec "hi! PmenuSel         guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=bold          ctermfg=" . s:cterm07 . " ctermbg=" . s:cterm08 . " cterm=bold"
-exec "hi! PmenuSbar        guifg=NONE            guibg=" . s:gui08 . " gui=NONE          ctermfg=NONE              ctermbg=" . s:cterm08 . " cterm=NONE"
-exec "hi! PmenuThumb       guifg=NONE            guibg=" . s:gui15 . " gui=NONE          ctermfg=NONE              ctermbg=" . s:cterm15 . " cterm=NONE"
+exec "hi! Pmenu            guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . s:cterm07 . " cterm=NONE"
+exec "hi! PmenuSel         guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=bold          ctermfg=" . s:cterm15 . " ctermbg=" . s:cterm07 . " cterm=bold"
+exec "hi! PmenuSbar        guifg=NONE            guibg=" . s:gui08 . " gui=NONE          ctermfg=NONE              ctermbg=" . s:cterm07 . " cterm=NONE"
+exec "hi! PmenuThumb       guifg=NONE            guibg=" . s:gui15 . " gui=NONE          ctermfg=NONE              ctermbg=" . s:cterm00 . " cterm=NONE"
 exec "hi! Question         guifg=" . s:gui07 . " guibg=NONE            gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=NONE"
 exec "hi! QuickFixLine     guifg=NONE            guibg=NONE            gui=underline     ctermfg=NONE              ctermbg=NONE              cterm=underline"
 exec "hi! Search           guifg=" . s:gui00 . " guibg=" . s:gui03 . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . s:cterm03 . " cterm=NONE"
@@ -98,15 +98,15 @@ exec "hi! SpellBad         guifg=" . s:gui07 . " guibg=NONE            gui=under
 exec "hi! SpellCap         guifg=" . s:gui07 . " guibg=NONE            gui=undercurl     ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=undercurl"
 exec "hi! SpellLocal       guifg=" . s:gui07 . " guibg=NONE            gui=undercurl     ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=undercurl"
 exec "hi! SpellRare        guifg=" . s:gui07 . " guibg=NONE            gui=undercurl     ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=undercurl"
-exec "hi! StatusLine       guifg=" . s:gui15 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm15 . " ctermbg=" . s:cterm08 . " cterm=NONE"
-exec "hi! StatusLineNC     guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=" . s:cterm08 . " cterm=NONE"
-exec "hi! TabLine          guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=" . s:cterm08 . " cterm=NONE"
-exec "hi! TabLineFill      guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=" . s:cterm08 . " cterm=NONE"
+exec "hi! StatusLine       guifg=" . s:gui15 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . s:cterm07 . " cterm=NONE"
+exec "hi! StatusLineNC     guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm08 . " ctermbg=" . s:cterm07 . " cterm=NONE"
+exec "hi! TabLine          guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . s:cterm07 . " cterm=NONE"
+exec "hi! TabLineFill      guifg=" . s:gui07 . " guibg=" . s:gui08 . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . s:cterm07 . " cterm=NONE"
 exec "hi! TabLineSel       guifg=" . s:gui07 . " guibg=NONE            gui=NONE          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=NONE"
 exec "hi! Title            guifg=" . s:gui07 . " guibg=NONE            gui=bold          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=bold"
 exec "hi! Visual           guifg=" . s:gui00 . " guibg=" . s:gui07 . " gui=NONE          ctermfg=" . s:cterm00 . " ctermbg=" . s:cterm07 . " cterm=NONE"
 exec "hi! WarningMsg       guifg=" . s:gui07 . " guibg=NONE            gui=bold          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=bold"
-exec "hi! WildMenu         guifg=" . s:gui08 . " guibg=NONE            gui=bold          ctermfg=" . s:cterm08 . " ctermbg=NONE              cterm=bold"
+exec "hi! WildMenu         guifg=" . s:gui07 . " guibg=NONE            gui=bold          ctermfg=" . s:cterm07 . " ctermbg=NONE              cterm=bold"
 
 hi! link ModeMsg MoreMsg
 
@@ -123,11 +123,11 @@ hi! link ModeMsg MoreMsg
 
 exec "hi! Comment          guifg=" . s:gui08 . " guibg=NONE            gui=italic             ctermfg=" . s:cterm08 . "  ctermbg=NONE                 cterm=italic"
 exec "hi! String           guifg=" . s:gui02 . " guibg=NONE            gui=NONE               ctermfg=" . s:cterm02 . "  ctermbg=NONE                 cterm=NONE"
-exec "hi! Boolean          guifg=" . s:gui03 . " guibg=NONE            gui=NONE               ctermfg=" . s:cterm03 . "  ctermbg=NONE                 cterm=NONE"
+exec "hi! Boolean          guifg=" . s:gui03 . " guibg=NONE            gui=NONE               ctermfg=" . s:cterm01 . "  ctermbg=NONE                 cterm=NONE"
 exec "hi! Number           guifg=" . s:gui05 . " guibg=NONE            gui=NONE               ctermfg=" . s:cterm05 . "  ctermbg=NONE                 cterm=NONE"
 exec "hi! Underlined       guifg=" . s:gui07 . " guibg=NONE            gui=underline          ctermfg=" . s:cterm07 . "  ctermbg=NONE                 cterm=underline"
 exec "hi! Error            guifg=" . s:gui07 . " guibg=" . s:gui01 . " gui=NONE               ctermfg=" . s:cterm07 . "  ctermbg=" . s:cterm01 . "    cterm=NONE"
-exec "hi! Todo             guifg=" . s:gui08 . " guibg=NONE            gui=bold,underline     ctermfg=" . s:cterm08 . "  ctermbg=NONE                 cterm=bold,underline"
+exec "hi! Todo             guifg=" . s:gui07 . " guibg=NONE            gui=bold,underline     ctermfg=" . s:cterm07 . "  ctermbg=NONE                 cterm=bold,underline"
 
 hi! link Character String
 hi! link Float Number
@@ -148,8 +148,8 @@ exec "hi! DiagnosticUnderlineInfo  guifg=" . s:gui02 . " guisp=" . s:gui02 . " g
 exec "hi! DiagnosticUnderlineHint  guifg=" . s:gui04 . " guisp=" . s:gui04 . " gui=underline ctermfg=" . s:cterm04 . " cterm=underline"
 
 " Telescope:
-hi! TelescopeSelection       gui=bold
-hi! TelescopeMatching        gui=bold
+hi! TelescopeSelection       gui=bold cterm=bold
+hi! TelescopeMatching        gui=bold cterm=bold
 
 hi! link TelescopeMultiSelection Visual
 
